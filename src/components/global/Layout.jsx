@@ -1,10 +1,14 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import ArrowTop from './ArrowTop'
+import Navbar from './Navbar'
 
 const Layout = () => {
+
   return (
     <div className='layout'>
-      {/* <Navbar darkMode={darkMode} setDarkMode={setDarkMode} /> */}
+      <Navbar />
+      <ArrowTop />
       <Outlet />
     </div>
   )

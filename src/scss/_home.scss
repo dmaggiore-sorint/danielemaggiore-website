@@ -1,3 +1,9 @@
 .home {
-  
+  section {
+    height: 100vh;
+  }
+
+  section:nth-child(even){
+    background: rgba($color: $darkBlue, $alpha: 0.7);
+  }
 }
