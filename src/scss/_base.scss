@@ -8,3 +8,16 @@
 html {
   font-size: 10px;
 }
+
+::-webkit-scrollbar-thumb {
+   width: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  background: rgba($color: $darkBlue, $alpha: 0.7);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background: $blue;
+}

@@ -4,7 +4,6 @@ import ArrowTop from './ArrowTop'
 import Navbar from './Navbar'
 
 const Layout = () => {
-
   return (
     <div className='layout'>
       <Navbar />

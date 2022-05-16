@@ -3,7 +3,27 @@
     height: 100vh;
   }
 
-  section:nth-child(even){
+  section:nth-child(even) {
     background: rgba($color: $darkBlue, $alpha: 0.7);
+  }
+
+  &__top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6rem;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px black;
+
+    @media screen and (max-width: 992px) {
+      padding-left: 0.5rem;
+      font-size: 2rem;
+    }
+
+    .top-section {
+      margin-top: 1rem;
+      width: fit-content;
+    }
   }
 }

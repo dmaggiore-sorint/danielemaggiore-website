@@ -10,7 +10,7 @@ const ArrowTop = () => {
       type='button'
       onClick={ scrollToTop }
     >
-      <i class="fa-solid fa-arrow-up-long"></i>
+      <i className="fa-solid fa-arrow-up-long"></i>
     </button>
   )
 }
