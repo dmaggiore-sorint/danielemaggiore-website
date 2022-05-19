@@ -7,6 +7,10 @@ const translations = {
     works: 'Works',
     interests: 'Interests',
     contact: 'Contacts',
+    contact_name: 'Name',
+    contact_email: 'Email',
+    contact_message: 'Message',
+    contact_submit: 'Send Message'
   },
   it: {
     hello: 'Ciao sono ',
@@ -16,6 +20,10 @@ const translations = {
     works: 'Lavori',
     interests: 'Interessi',
     contact: 'Contatti',
+    contact_name: 'Nome',
+    contact_email: 'Email',
+    contact_message: 'Messaggio',
+    contact_submit: 'Invia Messaggio'
   },
 };
 

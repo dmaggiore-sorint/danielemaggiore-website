@@ -1,0 +1,65 @@
+.contact {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20%;
+  position: relative;
+  overflow: hidden;
+
+  &__form {
+    background: rgba($color: $blue, $alpha: 0.8);
+    padding: 5rem;
+    border-radius: 15px;
+    min-width: 75vh;
+    position: relative;
+    right: 100%;
+
+    > form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  fieldset {
+    border-radius: 5px;
+    color: white;
+    padding: 1rem 2rem;
+    background: $darkBlue;
+    margin-bottom: 3rem;
+  }
+
+  legend {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  textarea,
+  input[type='email'],
+  input[type='text'] {
+    background: transparent;
+    width: 100%;
+    border: none;
+    color: white;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    background: $red;
+    border: none;
+    border-radius: 5px;
+  }
+}

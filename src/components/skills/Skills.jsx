@@ -23,7 +23,7 @@ const Skills = ({ test }) => {
         <p className="skills__title">
           <FormattedMessage id="skills" />
         </p>
-        <p className="skills__description">
+        <div className="skills__description">
           <Badge title="HTML 6" image={html} />
           <Badge title="HTML 6" image={css} />
           <Badge title="HTML 6" image={sass} />
@@ -38,7 +38,7 @@ const Skills = ({ test }) => {
           <Badge title="HTML 6" image={python} />
           <Badge title="HTML 6" image={flask} />
           <Badge title="HTML 6" image={twig} />
-        </p>
+        </div>
       </div>
     </div>
   );
