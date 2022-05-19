@@ -9,13 +9,13 @@ import './scss/index.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Provider store={store}>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route path="" element={<Home />} />
-          </Route>
-        </Routes>
-      </Router>
-    </Provider>
-)
+  <Provider store={store}>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="" element={<Home />} />
+        </Route>
+      </Routes>
+    </Router>
+  </Provider>
+);

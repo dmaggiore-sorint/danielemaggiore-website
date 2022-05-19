@@ -10,12 +10,13 @@ const translations = {
   },
   it: {
     hello: 'Ciao sono ',
-    webDeveloper: 'Frontend Developer',
+    webDeveloper: 'Sviluppatore Frontend',
+    about: 'Chi sono',
     skills: 'Competenze',
     works: 'Lavori',
     interests: 'Interessi',
     contact: 'Contatti',
   },
-}
+};
 
 export default translations;

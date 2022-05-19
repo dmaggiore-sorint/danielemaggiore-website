@@ -1,5 +1,6 @@
-import React from 'react'
-import TopSection from '../components/home/TopSection'
+import React from 'react';
+import About from '../components/about/About';
+import TopSection from '../components/home/TopSection';
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
         <TopSection />
       </section>
       <section>
-        <h1>section1</h1>
+        <About />
       </section>
       <section>
         <h1>section2</h1>
@@ -23,7 +24,7 @@ const Home = () => {
         <h1>section5</h1>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

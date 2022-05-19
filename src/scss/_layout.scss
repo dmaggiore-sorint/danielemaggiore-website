@@ -16,3 +16,41 @@
   left: 4rem;
   z-index: 2;
 }
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.from-left {
+  animation: from-left 1s ease-in-out 0s forwards;
+}
+
+.from-left-1 {
+  animation: from-left 1.3s ease-in-out 0s forwards;
+}
+
+.to-left {
+  animation: to-left 0.5s ease-in-out 0s forwards;
+}
+
+.to-left-1 {
+  animation: to-left 0.7s ease-in-out 0s forwards;
+}
+
+@keyframes from-left {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+
+@keyframes to-left {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 100%;
+  }
+}
