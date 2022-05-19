@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "build",
+    "site": "danielemaggiore",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
