@@ -1,6 +1,7 @@
 import React from 'react';
 import About from '../components/about/About';
 import TopSection from '../components/home/TopSection';
+import Skills from '../components/skills/Skills';
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
         <About />
       </section>
       <section>
-        <h1>section2</h1>
+        <Skills />
       </section>
       <section>
         <h1>section3</h1>
