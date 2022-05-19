@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import ArrowTop from './ArrowTop'
-import Navbar from './Navbar'
+import LangButton from './LangButton'
+import SideNavbar from './SideNavbar'
+import TopNavbar from './TopNavbar'
 
 const Layout = () => {
   const [activeSection, setActiveSection] = useState(0)
@@ -9,7 +11,7 @@ const Layout = () => {
   const scrollToSection = (section) => {
     document
       .querySelector('.layout')
-      .scrollTo({ top: window.innerHeight * section, behavior: 'smooth' })
+      .scrollTo({ top: document.querySelector(`section:nth-child(${section+1})`).offsetTop, behavior: 'smooth' })
     setActiveSection(section)
   }
 
@@ -36,8 +38,10 @@ const Layout = () => {
 
   return (
     <div className="layout">
-      <Navbar activeSection={activeSection} scrollToSection={scrollToSection} />
+      <SideNavbar activeSection={activeSection} scrollToSection={scrollToSection} />
+      <TopNavbar scrollToSection={scrollToSection} />
       <ArrowTop scroll={() => scrollToSection(0)} />
+      <LangButton />
       <Outlet />
     </div>
   )

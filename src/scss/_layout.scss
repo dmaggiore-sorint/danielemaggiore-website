@@ -7,6 +7,12 @@
   background-position: top right;
   background-size: cover;
 
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
+}
+
+.lang-button {
+  position: fixed;
+  bottom: 4rem;
+  left: 4rem;
+  z-index: 2;
 }
