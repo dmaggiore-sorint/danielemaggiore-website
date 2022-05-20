@@ -1,4 +1,5 @@
 import React from 'react'
+import About from '../components/home/About'
 import TopSection from '../components/home/TopSection'
 
 const Home = () => {
@@ -8,7 +9,7 @@ const Home = () => {
         <TopSection />
       </section>
       <section>
-        <h1>section2</h1>
+        <About />
       </section>
       <section>
         <h1>section3</h1>
