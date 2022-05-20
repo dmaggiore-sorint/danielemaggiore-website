@@ -6,6 +6,10 @@ const translations = {
     works: 'Works',
     insterests: 'Interests',
     contact: 'Contact',
+    contact_name: 'Name',
+    contact_email: 'Email',
+    contact_message: 'Message',
+    contact_submit: 'Send Message'
   },
   it: {
     webDeveloper: 'Sviluppatore Frontend',
@@ -14,6 +18,9 @@ const translations = {
     works: 'Lavori',
     insterests: 'Interessi',
     contact: 'Contatti',
+    contact_name: 'Nome',
+    contact_message: 'Messaggio',
+    contact_submit: 'Invia Messaggio'
   },
 }
 
