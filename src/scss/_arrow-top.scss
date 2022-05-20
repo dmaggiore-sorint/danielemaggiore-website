@@ -1,5 +1,26 @@
 .arrow-top {
-  background: rgba($color: $darkBlue, $alpha: 0.9);
-  padding: 1rem 2rem;
-  border-radius: 15px;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__background {
+    position: absolute;
+    z-index: 2;
+    width: 8rem;
+    height: 8rem;
+    background: white;
+    border-radius: 50%;
+  }
+
+  canvas {
+    position: absolute;
+    z-index: 1;
+  }
+
+  i {
+    z-index: 3;
+  }
 }

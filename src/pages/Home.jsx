@@ -16,6 +16,9 @@ const Home = () => {
       <section>
         <h1>section4</h1>
       </section>
+      <section>
+        <h1>section5</h1>
+      </section>
     </div>
   )
 }
