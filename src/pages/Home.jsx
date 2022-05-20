@@ -1,5 +1,6 @@
 import React from 'react'
 import About from '../components/home/About'
+import Skills from '../components/home/Skills'
 import TopSection from '../components/home/TopSection'
 
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
         <About />
       </section>
       <section>
-        <h1>section3</h1>
+        <Skills />
       </section>
       <section>
         <h1>section4</h1>
