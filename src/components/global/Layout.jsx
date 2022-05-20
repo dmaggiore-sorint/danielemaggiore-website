@@ -1,18 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Outlet } from 'react-router-dom';
+import { setActiveSection } from '../../store/sectionSlice';
 import ArrowTop from './ArrowTop';
 import LangButton from './LangButton';
 import SideNavbar from './SideNavbar';
 import TopNavbar from './TopNavbar';
 
 const Layout = () => {
-  const [activeSection, setActiveSection] = useState(0);
+  const dispatch = useDispatch();
+  const activeSection = useSelector(state => state.section.activeSection);
 
   const scrollToSection = (section) => {
     document
       .querySelector('.layout')
       .scrollTo({ top: window.innerHeight * section, behavior: 'smooth' });
-    setActiveSection(section);
+    dispatch(setActiveSection(section));
   };
 
   useEffect(() => {

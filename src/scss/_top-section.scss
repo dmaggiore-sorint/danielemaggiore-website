@@ -1,5 +1,35 @@
 .top-section {
-  background: rgba($color: $darkBlue, $alpha: 0.9);
-  padding: 1rem 2rem;
-  border-radius: 15px;
+  z-index: 3;
+
+  &__fullName {
+    font-size: 10rem;
+    font-weight: bolder;
+    letter-spacing: 1.5rem;
+    position: relative;
+    right: 100%;
+  }
+
+  &__role {
+    font-size: 7rem;
+    position: relative;
+    right: 100%;
+  }
+
+  &__mid-line {
+    width: 20rem;
+    height: 1rem;
+    border-radius: 999px;
+    background: $red;
+    margin-left: 5rem;
+    position: relative;
+    right: 100%;
+  }
+
+  &__mid-line2 {
+    @extend .top-section__mid-line;
+    margin-top: 1rem;
+    margin-left: 15rem;
+    position: relative;
+    right: 100%;
+  }
 }
