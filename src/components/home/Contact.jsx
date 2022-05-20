@@ -1,4 +1,5 @@
 import React from 'react';
+import emailjs from '@emailjs/browser';
 import { useSelector } from 'react-redux';
 import FormattedMessage from '../global/FormattedMessage';
 
@@ -7,8 +8,9 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(e.target);
-    e.target.reset();
+    emailjs
+      .sendForm('google_email', 'portfolio_email', e.target, 'gvpsSYbdzidYSQf3x')
+      .then(e.target.reset());
   };
 
   return (
