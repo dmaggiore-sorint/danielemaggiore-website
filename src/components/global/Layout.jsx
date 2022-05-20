@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import ArrowTop from './ArrowTop';
-import Navbar from './Navbar';
+import LangButton from './LangButton';
+import SideNavbar from './SideNavbar';
+import TopNavbar from './TopNavbar';
 
 const Layout = () => {
   const [activeSection, setActiveSection] = useState(0);
@@ -31,11 +33,15 @@ const Layout = () => {
 
   return (
     <div className="layout">
-      <Navbar
+      <TopNavbar
+        scrollToSection={scrollToSection}
+      />
+      <SideNavbar
         activeSection={activeSection}
         scrollToSection={scrollToSection}
       />
       <ArrowTop scroll={() => scrollToSection(0)} />
+      <LangButton />
       <Outlet />
     </div>
   );

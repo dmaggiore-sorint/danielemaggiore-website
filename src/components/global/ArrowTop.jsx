@@ -24,7 +24,7 @@ const ArrowTop = ({ scroll }) => {
       if (!ctx || !canvas) return;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.lineWidth = 10;
-      ctx.strokeStyle = 'black';
+      ctx.strokeStyle = 'rgb(81,19,56)';
       ctx.beginPath();
       ctx.arc(
         50,
